@@ -1,4 +1,5 @@
 "use client";
+import { Analytics } from "@vercel/analytics/next"
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -122,6 +123,7 @@ export default function FlutterProCourse() {
 
   return (
     <div className="bg-black text-white min-h-screen" dir="rtl">
+      <Analytics />
       <Header />
 
       <motion.div
